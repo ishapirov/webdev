@@ -1,0 +1,43 @@
+body{
+    background-image: url("background.jpg");
+    font-family:sans-serif;
+}
+h1 {
+  text-align:center;
+  color: #000080;
+}
+h3{
+
+}
+tr:nth-child(even) {
+  background-color: #84BCF8;
+}
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+table {
+  width: 30%;
+  border-collapse: collapse;
+}
+td{
+  border-collapse: collapse;
+}
+a:hover {
+  color: red;
+}
+div {
+  background-color: lightblue
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  width: 225px;
+  height: 300px;
+}
+span{
+  color: red;
+  font-weight: bold;
+}
