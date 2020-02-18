@@ -1,0 +1,123 @@
+body
+{
+  background-image: url("background.png");
+	font-family: Verdana, Tahoma, sans-serif;
+  font-size: 8pt;
+  margin:0;
+  padding:0;
+}
+#imgbanner
+{
+  background-image: url("bannerbackground.png");
+  background-repeat: repeat-x;
+  text-align: center;
+  height: 50px;
+}
+h1
+{
+  font-size: 24pt;
+	font-weight: bold;
+	text-align: center;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+#content
+{
+  margin: 0 auto;
+  width: 800px;
+  border: 4px solid gray;
+}
+#left
+{
+  width: 550px;
+  float: left;
+}
+#rating
+{
+  background-image: url("rottenbackground.png");
+  background-repeat: repeat-x;
+  height: 83px;
+}
+#ratingimg
+{
+    height: 83px;
+}
+#num
+{
+  font-size: 48px;
+  color: red;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+#numrevs
+{
+  font-size: 8px;
+  color: white;
+  vertical-align: super;
+}
+#leftcol
+{
+  width: 47%;
+  margin-left: 2%;
+  float: left;
+}
+#rightcol
+{
+  width: 47%;
+  margin-left: 2%;
+  float: left;
+}
+.review
+{
+  margin-bottom: 3em;
+}
+.quotebox
+{
+  font-size: 8px;
+  font-weight: bold;
+  background-color: #E1D697;
+  border: 2px solid gray;
+  padding: 8px;
+  overflow: hidden;
+}
+.revimg
+{
+  float:left;
+  margin-right: 5px;
+}
+.company
+{
+  font-style: italic;
+}
+.revicon
+{
+  float: left;
+}
+#generaloverview
+{
+  width:250px;
+  background-color: #A2B964;
+  font-size: 8px;
+  font-family:Arial, Helvetica, sans-serif;
+  float: right;
+}
+dl
+{
+  padding-left: 10px;
+}
+dt
+{
+  font-weight: bold;
+  margin-top: 1em;
+}
+#bottombar
+{
+  clear: both;
+  background-color: #A2B964;
+  padding: 5px;
+  text-align: center;
+  margin:0;
+}
+.images
+{
+  text-align: right;
+}
