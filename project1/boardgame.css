@@ -25,14 +25,15 @@ h1 {
   top:75px;
   position:absolute;
   animation-name: movepiece1;
-  animation-duration: 4s;
+  animation-duration: 20s;
 }
 
 #piece2 {
-   float: left;
    left:480px;
    top:115px;
    position:absolute;
+   animation-name: movepiece2;
+   animation-duration: 20s;
 }
 .middleimg {
     position: absolute;
@@ -55,6 +56,13 @@ h1 {
 }
 
 @keyframes movepiece1 {
-    from {left:480px; top:75px;}
-    to {left:1120px;top:75px;}
+    25% {left:1120px;top:75px;position: absolute;}
+    50% {left:1120px;top:75px;position: absolute;}
+    100% {left:1120px;top:75px;position: absolute;}
+}
+
+@keyframes movepiece2 {
+    50% {left:480px;top:115px;position: absolute;}
+    75% {left:1120px;top:115px;position: absolute;}
+    100% {left:1120px;top:115px;position: absolute;}
 }
