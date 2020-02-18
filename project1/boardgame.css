@@ -54,6 +54,60 @@ h1 {
     height:100px;
     width: 300px;
 }
+#chance {
+    position: absolute;
+    top:575px;
+    left:895px;
+    width: 210px;
+    height:110px;
+    transform: rotate(-47deg);
+}
+#chanceimg {
+    width: 210px;
+    height: 110px;
+}
+#chanceother {
+    position: absolute;
+    top:575px;
+    left:895px;
+    width: 210px;
+    height:110px;
+    transform: rotate(-47deg);
+}
+#chanceotherimg {
+    width: 210px;
+    height: 110px;
+}
+#chance:hover {
+    opacity: 0;
+}
+#comchest {
+    position: absolute;
+    top:295px;
+    left:635px;
+    width: 210px;
+    height:110px;
+    transform: rotate(-227deg);
+}
+#comchestimg {
+    width: 210px;
+    height: 110px;
+}
+#comchestother {
+    position: absolute;
+    top:295px;
+    left:635px;
+    width: 210px;
+    height:110px;
+    transform: rotate(-47deg);
+}
+#comchestotherimg {
+    width: 210px;
+    height: 110px;
+}
+#comchest:hover {
+    opacity: 0;
+}
 
 @keyframes movepiece1 {
     25% {left:1120px;top:75px;position: absolute;}
