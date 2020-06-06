@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>In Class 10</title>
+
+<style>
+table, th, td {
+position: relative;
+}
+.imgClass{
+
+}
+</style>
+</head>
+<body>
+  <h1> Ivan's Matching Game </h1>
+  <h2> Click the identical images to make them disappear </h2>
+  <h2> Select the number of pairs of pictures </h2>
+<input id="pics8" name="numPics" type="radio" value ="8">8 (120 seconds to solve)</input><br>
+<input id="pics10" name="numPics" type="radio" value ="10">10 (150 seconds to solve)</input><br>
+<input id="pics12" name="numPics" type="radio" value ="12">12 (180 seconds to solve)</input><br>
+  <h2> Select the difficulty (Time to memorize)</h2>
+<input id="easy" name="difficulty" type="radio" value ="easy">Easy (8 sec)</input><br>
+<input id="medium" name="difficulty" type="radio" value ="medium">Medium (5 sec)</input><br>
+<input id="hard" name="difficulty" type="radio" value ="hard">Hard (3 sec)</input><br><br>
+
+
+<button id="submitButton" onclick="beginGame()">Begin</button>
+
+<table id="imgTable">
+
+</table>
+<h1 id="gameDone"> </h1>
+<script type="text/javascript" src = "Part2.js">
+</script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>In Class 10</title>
+<script type="text/javascript">
+function fibonacci(numTimes) {
+  var text = "0 ";
+  if(numTimes == 0){
+    return;
+  }
+  if(numTimes == 1){
+    return text;
+  }
+  var num1 = 0;
+  var num2 = 1;
+  var i;
+  for(i = 1;i < numTimes;i++) {
+    text += num2 + " ";
+    var sum = num1 + num2;
+    var temp = num1;
+    num1 = num2;
+    num2 = temp + num2;
+  }
+  return text;
+}
+function drawPattern(){
+  var i;
+  var j;
+  var text = "";
+  for(i = 1;i <= 5;i++) {
+    for(j = 1;j <= i;j++) {
+      text += "* ";
+    }
+    text += "\n";
+  }
+  return text;
+}
+
+function sortArray(array){
+  array.sort();
+  var text = "";
+  for (i = 0; i < array.length; i++) {
+    text += " " + array[i];
+    }
+  return text;
+}
+
+function frequentItem(array){
+  var checkarray = [];
+
+  var i;
+  for (i = 0; i < array.length; i++) {
+    if(!(checkarray.includes(array[i]))){
+      checkarray.push(array[i]);
+    }
+  }
+  var freqarray = [];
+  for (i = 0; i < checkarray.length; i++) {
+    freqarray.push(0);
+  }
+  for (i = 0; i < array.length; i++) {
+    var index = checkarray.indexOf(array[i])
+    freqarray[index] = freqarray[index] + 1;
+  }
+  var index= 0;
+  for (i = 1; i < freqarray.length; i++) {
+    if(freqarray[i] > freqarray[index]){
+      index = i;
+    }
+  }
+  var elem = checkarray[index];
+  var text = "";
+  text += "(" + elem + ") " + freqarray[index] + " times";
+  return text;
+}
+
+function shuffle6(array){
+  var i;
+  for (i = 0; i < array.length; i++) {
+      var j = Math.floor(Math.random() * 6);
+      var temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+  var text = "";
+  for (i = 0; i < array.length; i++) {
+      text += " " + array[i];
+  }
+  return text;
+}
+
+function fibTest(){
+  document.getElementById("fibo").innerHTML = fibonacci(7);
+}
+
+function fibTest2(){
+  document.getElementById("fibo2").innerHTML = fibonacci(10);
+}
+
+function patternTest(){
+    alert(drawPattern());
+}
+
+function sortArrayTest(){
+  arr = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+  alert(sortArray(arr));
+}
+
+function freqItemTest(){
+  arr = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+  alert(frequentItem(arr));
+}
+
+function shuffleTest(){
+  arr = [1,2,3,4,5,6];
+  alert(shuffle6(arr));
+}
+
+function validate(form){
+    var uID = form.uID.value;
+    var fname = form.FName.value;
+    var lname = form.LName.value;
+    var errorAlert = [];
+    if (uID.length < 1) {
+        errorAlert.push("ID, ");
+        printError("uidErr","Please enter an ID");
+    }
+    if (fname.length < 1) {
+        errorAlert.push("FirstName, ");
+        printError("fnameErr","Please enter a First Name");
+    }
+    if (lname.length < 1) {
+        errorAlert.push("LastName, ");
+        printError("lnameErr","Please enter a Last Name");
+    }
+
+    if (errorAlert.length > 0) {
+        var msg = "You forgot to fill in the following field(s): ";
+        for (var i = 0; i<errorAlert.length; i++) {
+            msg += errorAlert[i];
+        }
+        alert(msg);
+        return false;
+    }
+    else{
+      var dataPreview = "You've entered the following details: \n" +
+                        "ID: " + uID +
+                        ", First Name: " + fname +
+                        ", Last Name: " + lname;
+      alert(dataPreview);
+      return true;
+    }
+}
+function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+</script>
+<style>
+.error  {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color:red
+}
+</style>
+</head>
+<body>
+<h1>Part 1</h1>
+<h2>Testing fibonacci with 7 numbers</h2>
+<div id="fibo"></div>
+<button type="button" onclick="fibTest()">Test Fib with 7 numbers</button>
+
+<h2>Testing fibonacci with 10 numbers</h2>
+<div id="fibo2"></div>
+<button type="button" onclick="fibTest2()">Test Fib with 10 numbers</button>
+
+<h2>Testing draw pattern</h2>
+<button type="button" onclick="patternTest()">Draw pattern</button>
+
+<h2>Testing sort array on array [3, 8, 7, 6, 5, -4, 3, 2, 1]</h2>
+<button type="button" onclick="sortArrayTest()">Sort Array</button>
+
+<h2>Testing most frequent item in array on array [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]</h2>
+<button type="button" onclick="freqItemTest()">Most Frequent Element</button>
+
+<h2>Testing shuffle array on array [1,2,3,4,5,6]</h2>
+<button type="button" onclick="shuffleTest()">Shuffle Elements</button>
+
+<h1>Part 2</h1>
+<form name ="myForm"method="post" onsubmit="return validate(this)">
+    <div class="error" id="uidErr"></div>
+    <label style = "display:inline-block;width:75px;text-align:left;"> ID: </label>
+      <input type="text" name="uID" size="10"><br>
+    <div class="error" id="fnameErr"></div>
+    <label style = "display:inline-block;width:75px;text-align:left;">FirstName: </label>
+      <input type="text" name="FName" size="10"><br>
+    <div class="error" id="lnameErr"></div>
+    <label style = "display:inline-block;width:75px;text-align:left;">LastName: </label>
+      <input type="text" name="LName" size="10"><br>
+
+    <input type="submit" value="Add">
+</form>
+</body>
+</html>

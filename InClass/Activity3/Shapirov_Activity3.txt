@@ -1,0 +1,3 @@
+Exercises 5+6: http://codd.cs.gsu.edu/~ishapirov1/InClassActivity3/ex5and6.html
+Exercise 7:
+http://codd.cs.gsu.edu/~ishapirov1/InClassActivity3/ex7.html

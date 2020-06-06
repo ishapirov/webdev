@@ -1,0 +1,4 @@
+HTML:
+http://codd.cs.gsu.edu/~ishapirov1/InClassActivity5/journal.html
+CSS:
+http://codd.cs.gsu.edu/~ishapirov1/InClassActivity5/journal_layout.css

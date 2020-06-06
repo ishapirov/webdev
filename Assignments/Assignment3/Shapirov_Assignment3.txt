@@ -1,0 +1,4 @@
+1. http://codd.cs.gsu.edu/~ishapirov1/Assignments/Assignment3/charlieatemylunch.php
+2. http://codd.cs.gsu.edu/~ishapirov1/Assignments/Assignment3/checkerboard.php
+3. http://codd.cs.gsu.edu/~ishapirov1/Assignments/Assignment3/arraysandfuncs.php
+4. http://codd.cs.gsu.edu/~ishapirov1/Assignments/Assignment3/10bestrestaurants.php

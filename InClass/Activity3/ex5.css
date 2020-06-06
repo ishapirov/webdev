@@ -1,0 +1,44 @@
+h1{
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: "Arial";
+  color: Moccasin;
+}
+h2{
+  font-size: 14pt;
+  font-weight: normal;
+  font-family: "Arial";
+  color: Khaki;
+}
+p.album{
+  font-size: 12pt;
+  font-weight: normal;
+  font-family: "Arial";
+  color: Khaki;
+}
+p.year{
+  font-size: 12pt;
+  font-weight: bold;
+  font-family: "Arial";
+  color: Ivory;
+}
+p.background{
+  color: Chocolate;
+}
+p.verse{
+  font-size: 14pt;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+  color: Gold;
+  margin-left: 2cm;
+  margin-right: 2cm;
+}
+p.chorus{
+  font-size: 14pt;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Trebuchet MS";
+  color: Gold;
+  margin-left: 4cm;
+  margin-right: 4cm;
+}
