@@ -1,0 +1,5 @@
+Group members: Ivan Shapirov, Michael Kellam, Nate Heppard
+Project 1 link:
+http://codd.cs.gsu.edu/~ishapirov1/Projects/Project1/index.html
+CSS:
+http://codd.cs.gsu.edu/~ishapirov1/Projects/Project1/boardgame.css

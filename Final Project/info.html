@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>The Info</title> 
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <!-- Navigation Bar-->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Game</a></li>
+            <li><a class="active" href="#info">Info</a></li>
+            <li><a href="credits.html">Credits</a></li>
+        </ul>
+
+        <br/><br/>
+
+        <h1>How To Play:</h1>
+        <div class="frosted ten-top">
+            <h3>Introduction</h3>
+            <p>The "Game of Life" is a zero-player game, meaning that once the initial input is received (i.e. the seed),<br/>
+            the game begins and continues for an infinite amount of time without requiring input from the player.<br/>
+            In this way, it's more closely related to a simulation rather than a game. </p>
+
+            <br/>
+
+            <h3>Rules</h3>
+            <p>The playing board representing the game universe consists of a grid of cells, each of which can interact with its<br/>
+            8 neighboring cells and exists in one of two states: <b>alive</b> or <b>dead</b>. Generations are based on the state<br/>
+            of the previous universe. During the creation of each successive generation, individual cells follow this protocol:</p>
+
+            <br/>
+
+            <p>-> Any cell that is <b>alive</b> and has 2-3 neighbors that are also <b>alive</b> survives to the next generation</p>
+            <p>-> Any cell that is <b>dead</b> and has exactly 3 neighbors that are <b>alive</b> becomes <b>alive</b> in the next generation</p>
+            <p>-> Any other cell that is <b>alive</b> becomes <b>dead</b>; likewise, any other cell that is <b>dead</b> remains <b>dead</b></p>
+
+            <br/>
+
+            <h3>The Seed</h3>
+            <p>This program contains several seed presets to choose from as well as a blank preset. For the blank preset, the player<br/>
+            can choose individual cells to populate. After populating the playing board, the player can press "Start" to generate<br/>
+            successive generations on a timed interval. Once the board no longer contains any populated (<b>alive</b>) cells, the<br/>
+            game is essentially over.</p>
+        </div>
+    </body>
+</html>

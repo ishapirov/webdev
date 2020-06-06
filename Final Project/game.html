@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+
+  <body>
+    <!-- Navigation Bar-->
+    <ul>
+      <div class="center">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="#game">Game</a></li>
+        <li><a href="info.html">Info</a></li>
+        <li><a href="credits.html">Credits</a></li>
+      </div>
+    </ul>
+
+    <br/> 
+
+    <table class="center" id="grid"></table>
+
+    <br/>
+
+    <div class="frosted ten-top">
+      <button class="button_black" id="update1" onclick="update1()"> Increment 1 Generation </button>
+      <button class="button_black" id="update23" onclick="update23()"> Increment 23 Generations </button>
+
+      <br/><br/>
+
+      <label class="shadowed" for="patterns"><b>Select a pattern:</b></label>
+
+      <br/>
+
+      <select id="patterns" onchange="patternSelected()">
+        <option value="blank" selected="selected">Blank</option>
+        <option value="beehive">Beehive</option>
+        <option value="beacon">Beacon</option>
+        <option value="pulsar">Pulsar</option>
+        <option value="glider">Glider</option>
+      </select>
+
+      <br/>
+
+      <button class="button_green" id="start" onclick="startInc()">Start</button>
+      <button class="button_red" id="stop" onclick="stop()">Stop</button>
+      <button class="button_blue" id="reset" onclick="reset()"> Reset </button>
+
+      <br/>
+
+      <h3 id="gen">Generation: 0</h3>
+      <h3 id="pop">Population: 0</h3>
+    </div>
+    <script type="text/javascript" src = "gamelogic.js"></script>
+  </body>
+
+</html>
